@@ -8,7 +8,6 @@
       <td>Value</td>
     </tr>
     <% @env.each do |name, value| %>
-      <% value = value[0..19] + "..." if value.length > 20 %>
       <tr>
         <td><%= name %></td>
 	<td><%= value %></td>
